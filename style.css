@@ -1,0 +1,119 @@
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(43, 119, 214, 0.3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tip-container {
+  background-color: #fff;
+  width: 50vw;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+}
+.tip-container__header {
+  color: #fff;
+  background-color: rgb(106, 94, 239);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.tip-form__input-container {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.small-header {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.input-line-container {
+  display: flex;
+}
+.dollar-icon,
+.user-icon {
+  color: #fff;
+  background-color: rgb(106, 94, 239);
+  font-size: 1.4rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 6px 0 0 6px;
+}
+.tip-form__amount-input,
+.tip-form__people-input,
+.tip-form__service-select {
+  width: 100%;
+  font-size: 2rem;
+  color: rgba(43, 38, 38, 0.8);
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-style: hidden;
+  border: 1px solid rgb(187, 172, 172);
+  border-radius: 0 6px 6px 0;
+}
+.tip-form__service-select {
+  font-family: inherit;
+  border-radius: 6px;
+}
+.tip-form__btn-calc {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(106, 94, 239);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.tip-form__btn-calc:hover {
+  background-color: rgb(152, 145, 209);
+  color: #000;
+}
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.result-container__img-load {
+  height: 100px;
+  display: none;
+}
+.tip-amount,
+.total-amount {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .tip-container {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .tip-container {
+    width: 90vw;
+  }
+  html {
+    font-size: 50%;
+  }
+}
